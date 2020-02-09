@@ -11,7 +11,7 @@ import java.util.Random;
  */
 public class Dice
 {
-    private int myRollCount;   // # times rolled
+//    private int myRollCount;   // # times rolled
     private int mySides;       // # sides
     private Random myRandGen;  // the random number generator
     private int currentSideUp; // which side of the die is up right now?
@@ -33,7 +33,7 @@ public class Dice
      */
     public Dice(int sides)
     {
-        myRollCount = 0;
+//        myRollCount = 0;
         mySides = sides;
         myRandGen = new Random();
         currentSideUp = myRandGen.nextInt(mySides) + 1;
@@ -46,7 +46,7 @@ public class Dice
      */
     public int roll()
     {
-        myRollCount++;
+//        myRollCount++;
         currentSideUp = myRandGen.nextInt(mySides) + 1;
         return currentSideUp;
     }
@@ -66,10 +66,10 @@ public class Dice
      * @return number of times dice object rolled
      */
 
-    public int numRolls()
-    {
-        return myRollCount;
-    }
+//    public int numRolls()
+//    {
+//        return myRollCount;
+//    }
 
     /**
      * Returns a string representing this Dice object
@@ -77,7 +77,7 @@ public class Dice
 
     public String toString()
     {
-        return "# sides: " + numSides() + " # rolls: " + numRolls();
+        return "# sides: " + numSides() + " # rolls: ";
     }
 
 //    public static void main(String[] args)
